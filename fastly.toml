@@ -7,7 +7,7 @@ description = "At the margins of RFC 9110."
 language = "rust"
 manifest_version = 3
 name = "kitty-header"
-service_id = ""
+service_id = "NRF5TZWykaNWzn1WCb7hj2"
 
 [scripts]
   build = "cargo build --bin fastly-compute-project --release --target wasm32-wasi --color always"
