@@ -10,7 +10,7 @@ fn main(req: Request) -> Result<Response, Error> {
             .with_header(header::LOCATION, "https://http.cat")
     };
 
-    let resp = if let Some(h) = req.get_header(HeaderName::from_static("Too-Big")) {
+    let resp = if let Some(h) = req.get_header(HeaderName::from_static("too-big")) {
         resp.with_header(HeaderName::from_static("Too-Big"), h.len().to_string())
     } else {
         resp
