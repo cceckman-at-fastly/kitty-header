@@ -11,7 +11,7 @@ fn main(req: Request) -> Result<Response, Error> {
     };
 
     let resp = if let Some(h) = req.get_header(HeaderName::from_static("too-big")) {
-        resp.with_header(HeaderName::from_static("Too-Big"), h.len().to_string())
+        resp.with_header(HeaderName::from_static("too-big"), h.len().to_string())
     } else {
         resp
     };
